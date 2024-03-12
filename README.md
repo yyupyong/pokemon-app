@@ -36,3 +36,7 @@ $ fvm flutter pub get
 ```
 
 上記のコマンドを実行したら、一度 VS Code を再起動してください。（バージョン変更が読み込まれない場合があるため）
+
+### Git Flow
+
+main ブランチを master として、main から feature を切るようにして進めてください
