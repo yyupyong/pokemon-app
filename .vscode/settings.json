@@ -1,4 +1,7 @@
 {
   "dart.flutterSdkPath": ".fvm/flutter_sdk",
-  "dart.lineLength": 80
+  "dart.lineLength": 80,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }
