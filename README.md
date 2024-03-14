@@ -21,21 +21,25 @@ Flutter SDK のバージョン管理は [fvm](https://fvm.app/) を想定して�
 
 https://fvm.app/docs/getting_started/installation
 
-### 開発環境
-
-Flutter の開発用の IDE は Visual Studio Code（以下 VS Code）と Android Studio の選択肢がありますが、このプロジェクトでは VS Code を利用してください
-
 ### fvm による Flutter のバージョン指定
 
-現状では `3.13.9` を指定しています。VS Code でこのプロジェクトを開き、ウィンドウ右下のターミナルから以下のコマンドで Flutter SDK のバージョンを `3.13.9` に設定してください。
+現状では `3.19.3` を指定しています。VS Code でこのプロジェクトを開き、ウィンドウ右下のターミナルから以下のコマンドで Flutter SDK のバージョンを `3.19.3` に設定してください。
 
 ```
-$ fvm install 3.13.9
-$ fvm use 3.13.9
+$ fvm install 3.19
+$ fvm use 3.19.3
 $ fvm flutter pub get
 ```
 
 上記のコマンドを実行したら、一度 VS Code を再起動してください。（バージョン変更が読み込まれない場合があるため）
+
+### 開発環境
+
+Flutter の開発用の IDE は Visual Studio Code（以下 VS Code）と Android Studio の選択肢がありますが、このプロジェクトでは VS Code を利用してください
+
+### 命名規則・コーディングルール
+
+linter として pedantic_mono を入れてるのでそこに沿えばという感じ
 
 ### Git Flow
 
