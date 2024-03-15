@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokemon_app/gen/assets.gen.dart';
 
 class BaseScreen extends StatelessWidget {
   const BaseScreen({super.key});
@@ -10,11 +11,7 @@ class BaseScreen extends StatelessWidget {
         children: [
           Positioned(
             right: -24,
-            child: Image.asset(
-              'assets/MonsterBall_gray.png',
-              height: 160,
-              width: 160,
-            ),
+            child: Assets.monsterBallGray.image(),
           ),
           Positioned(
             top: MediaQuery.of(context).padding.top + 24,
