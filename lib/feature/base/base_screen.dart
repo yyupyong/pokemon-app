@@ -10,33 +10,40 @@ class BaseScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            right: -24,
+            right: -16,
             child: Assets.monsterBallGray.image(),
           ),
-          Positioned(
-            top: MediaQuery.of(context).padding.top + 24,
-            left: 16,
-            child: const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Pokemon',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
+          CustomScrollView(
+            slivers: [
+              SliverPadding(
+                padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).padding.top + 24,
+                  left: 16,
                 ),
-              ],
-            ),
-          ),
-          Positioned.fill(
-            top: MediaQuery.of(context).padding.top + 24,
-            left: 16,
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (ctx, i) {
-                return Text(
-                  i.toString(),
-                );
-              },
-            ),
+                sliver: const SliverToBoxAdapter(
+                  child: Text(
+                    'Pokemon',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              SliverPadding(
+                padding: const EdgeInsets.only(
+                  top: 24,
+                  left: 16,
+                ),
+                sliver: SliverList(
+                  delegate: SliverChildBuilderDelegate(
+                    childCount: 10,
+                    (context, index) {
+                      return Text(
+                        index.toString(),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
