@@ -8,6 +8,7 @@ class App extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'pokemon-app',
       theme: ThemeData(
         useMaterial3: true,
