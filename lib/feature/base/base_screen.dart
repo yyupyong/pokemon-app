@@ -10,8 +10,9 @@ class BaseScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            right: -16,
-            child: Assets.monsterBallGray.image(),
+            right: -24,
+            child: Assets.monsterBallGray
+                .image(width: 160, height: 160, fit: BoxFit.cover),
           ),
           CustomScrollView(
             slivers: [
