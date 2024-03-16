@@ -6,12 +6,11 @@ part of 'pokemon_fetch.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$fetchPokemonListHash() => r'ab2f5bc9f2bed25f48f20755854a68bc66cfb32b';
+String _$fetchPokemonListHash() => r'33a5f673cf602a00cc4c5846a6b1a7cc1268b892';
 
 /// See also [fetchPokemonList].
 @ProviderFor(fetchPokemonList)
-final fetchPokemonListProvider =
-    AutoDisposeFutureProvider<Paging<Pokemon>>.internal(
+final fetchPokemonListProvider = FutureProvider<Paging<Pokemon>>.internal(
   fetchPokemonList,
   name: r'fetchPokemonListProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -21,9 +20,9 @@ final fetchPokemonListProvider =
   allTransitiveDependencies: null,
 );
 
-typedef FetchPokemonListRef = AutoDisposeFutureProviderRef<Paging<Pokemon>>;
+typedef FetchPokemonListRef = FutureProviderRef<Paging<Pokemon>>;
 String _$fetchPokemonDetailHash() =>
-    r'fa66a3893ba371505c38a0d939e4b5ff958f6f52';
+    r'de044c7312a6eadac542e713dec4fe46493e9ad6';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -89,8 +88,7 @@ class FetchPokemonDetailFamily extends Family<AsyncValue<PokemonDetail>> {
 }
 
 /// See also [fetchPokemonDetail].
-class FetchPokemonDetailProvider
-    extends AutoDisposeFutureProvider<PokemonDetail> {
+class FetchPokemonDetailProvider extends FutureProvider<PokemonDetail> {
   /// See also [fetchPokemonDetail].
   FetchPokemonDetailProvider(
     int id,
@@ -142,7 +140,7 @@ class FetchPokemonDetailProvider
   }
 
   @override
-  AutoDisposeFutureProviderElement<PokemonDetail> createElement() {
+  FutureProviderElement<PokemonDetail> createElement() {
     return _FetchPokemonDetailProviderElement(this);
   }
 
@@ -160,14 +158,13 @@ class FetchPokemonDetailProvider
   }
 }
 
-mixin FetchPokemonDetailRef on AutoDisposeFutureProviderRef<PokemonDetail> {
+mixin FetchPokemonDetailRef on FutureProviderRef<PokemonDetail> {
   /// The parameter `id` of this provider.
   int get id;
 }
 
 class _FetchPokemonDetailProviderElement
-    extends AutoDisposeFutureProviderElement<PokemonDetail>
-    with FetchPokemonDetailRef {
+    extends FutureProviderElement<PokemonDetail> with FetchPokemonDetailRef {
   _FetchPokemonDetailProviderElement(super.provider);
 
   @override
