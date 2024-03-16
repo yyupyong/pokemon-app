@@ -6,15 +6,16 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'pokemon_fetch.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 Future<Paging<Pokemon>> fetchPokemonList(FetchPokemonListRef ref) {
   return ref.watch(pokemonApiClientProvider).get<Paging<Pokemon>>(
         path: 'pokemon',
+        queryParams: {'limit': '100'},
         decoder: (json) => Paging.fromJson(json, Pokemon.fromJson),
       );
 }
 
-@riverpod
+@Riverpod(keepAlive: true)
 Future<PokemonDetail> fetchPokemonDetail(FetchPokemonDetailRef ref, int id) {
   return ref.watch(pokemonApiClientProvider).get<PokemonDetail>(
         path: 'pokemon/$id',
