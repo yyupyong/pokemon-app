@@ -4,8 +4,8 @@ import 'package:pokemon_app/feature/home/pokemon_fetch.dart';
 import 'package:pokemon_app/feature/home/widget/pokemon_list_item.dart';
 import 'package:pokemon_app/gen/assets.gen.dart';
 
-class BaseScreen extends ConsumerWidget {
-  const BaseScreen({super.key});
+class HomeScreen extends ConsumerWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

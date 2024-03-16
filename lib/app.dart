@@ -13,7 +13,7 @@ class App extends ConsumerWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const BaseScreen(),
+      home: const HomeScreen(),
     );
   }
 }
