@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pokemon_app/const/pokeapi_color.dart';
-import 'package:pokemon_app/feature/base/model/pokemon_detail.dart';
+import 'package:pokemon_app/feature/home/model/pokemon_detail.dart';
 
 class PokemonListItem extends ConsumerWidget {
   const PokemonListItem({super.key, required this.poke});

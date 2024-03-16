@@ -1,5 +1,5 @@
-import 'package:pokemon_app/feature/base/model/pokemon.dart';
-import 'package:pokemon_app/feature/base/model/pokemon_detail.dart';
+import 'package:pokemon_app/feature/home/model/pokemon.dart';
+import 'package:pokemon_app/feature/home/model/pokemon_detail.dart';
 import 'package:pokemon_app/service/api/api_client.dart';
 import 'package:pokemon_app/service/paging/model/paging.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';

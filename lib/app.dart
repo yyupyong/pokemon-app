@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:pokemon_app/feature/base/base_screen.dart';
+import 'package:pokemon_app/feature/home/home_screen.dart';
 
 class App extends ConsumerWidget {
   const App({super.key});
