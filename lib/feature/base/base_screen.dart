@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pokemon_app/feature/base/pokemon_fetch.dart';
+import 'package:pokemon_app/feature/base/widget/pokemon_list_item.dart';
 import 'package:pokemon_app/gen/assets.gen.dart';
 
 class BaseScreen extends ConsumerWidget {
@@ -49,9 +50,9 @@ class BaseScreen extends ConsumerWidget {
                       delegate: SliverChildBuilderDelegate(
                         childCount: data.items.length,
                         (context, index) {
-                          return Text(
-                            data.items[index].name,
-                          );
+                          final poke =
+                              ref.watch(fetchPokemonDetailProvider(index + 1));
+                          return PokemonListItem(poke: poke.value);
                         },
                       ),
                     ),
