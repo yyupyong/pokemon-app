@@ -4,7 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'api_client.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 ApiClient pokemonApiClient(PokemonApiClientRef ref) {
   return ApiClient();
 }
@@ -19,6 +19,7 @@ class ApiClient {
 
   Future<T> get<T>({
     required String path,
+    Map<String, dynamic>? queryParams,
     required T Function(Map<String, dynamic> json) decoder,
   }) async {
     final res = await http
@@ -26,6 +27,7 @@ class ApiClient {
           Uri.https(
             _host,
             'api/v2/$path',
+            queryParams,
           ),
           headers: _headers,
         )
