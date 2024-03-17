@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pokemon_app/const/pokeapi_color.dart';
 import 'package:pokemon_app/feature/home/model/pokemon_detail.dart';
-import 'package:pokemon_app/feature/home/widget/type_tag.dart';
+import 'package:pokemon_app/feature/detail/widget/type_tag.dart';
 import 'package:pokemon_app/gen/assets.gen.dart';
 
 class PokemonDetailScreen extends StatelessWidget {

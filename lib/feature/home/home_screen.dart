@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:pokemon_app/feature/home/pokemon_fetch.dart';
+import 'package:pokemon_app/feature/detail/provider/fetch_pokemon_detail.dart';
+import 'package:pokemon_app/feature/home/provider/fetch_pokemon_list.dart';
 import 'package:pokemon_app/feature/home/widget/pokemon_list_item.dart';
 import 'package:pokemon_app/gen/assets.gen.dart';
 
