@@ -17,6 +17,7 @@ class TypeTag extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
           decoration: BoxDecoration(
             color: pokeTypeColors[e.type.name] ?? Colors.grey.shade200,
+            border: Border.all(color: Colors.white),
             borderRadius: BorderRadius.circular(15),
           ),
           child: Text(
