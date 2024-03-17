@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pokemon_app/const/pokeapi_color.dart';
+import 'package:pokemon_app/feature/detail/widget/detail_container.dart';
 import 'package:pokemon_app/feature/home/model/pokemon_detail.dart';
 import 'package:pokemon_app/feature/detail/widget/type_tag.dart';
 import 'package:pokemon_app/gen/assets.gen.dart';
@@ -94,12 +96,12 @@ class PokemonDetailScreen extends StatelessWidget {
                   const SizedBox(height: 24),
                   TabBar(
                     labelStyle: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                     unselectedLabelStyle: TextStyle(
-                      fontSize: 16,
+                      fontSize: 18,
                       color: Colors.grey[100]?.withOpacity(0.6),
                       fontWeight: FontWeight.bold,
                     ),
@@ -115,21 +117,35 @@ class PokemonDetailScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Expanded(
+                  Expanded(
                     child: TabBarView(
                       children: [
                         SingleChildScrollView(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 16,
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 32,
                               vertical: 24,
                             ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                DetailContainer(
+                                  label: 'Height',
+                                  value: poke.height.toString(),
+                                ),
+                                DetailContainer(
+                                  label: 'Weight',
+                                  value: poke.weight.toString(),
+                                ),
+                                DetailContainer(
+                                  label: 'Abilities',
+                                  value: poke.weight.toString(),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                        SingleChildScrollView(
+                        const SingleChildScrollView(
                           child: Row(),
                         ),
                       ],
