@@ -10,7 +10,7 @@ class TypeTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Wrap(
-      spacing: 8,
+      spacing: 12,
       runSpacing: 4,
       children: typeList.map((e) {
         return Container(
