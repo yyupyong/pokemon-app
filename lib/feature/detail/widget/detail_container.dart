@@ -26,7 +26,7 @@ class DetailContainer extends StatelessWidget {
         Text(
           label,
           style: const TextStyle(
-            fontSize: 16,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
@@ -37,7 +37,7 @@ class DetailContainer extends StatelessWidget {
         Text(
           '$displayValue $unit',
           style: const TextStyle(
-            fontSize: 16,
+            fontSize: 18,
             fontWeight: FontWeight.w600,
             color: Colors.white,
           ),
