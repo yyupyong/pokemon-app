@@ -87,10 +87,13 @@ class PokemonDetailScreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 200),
             child: Column(
               children: [
-                Image.network(
-                  poke.sprites.other.officialArtwork.frontDefault,
-                  height: 260,
-                  width: 260,
+                Hero(
+                  tag: 'pokemon_${poke.id}',
+                  child: Image.network(
+                    poke.sprites.other.officialArtwork.frontDefault,
+                    height: 260,
+                    width: 260,
+                  ),
                 ),
                 const SizedBox(height: 12),
                 Row(

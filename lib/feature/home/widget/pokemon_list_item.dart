@@ -17,17 +17,20 @@ class PokemonListItem extends ConsumerWidget {
     final nonNullPoke = poke!;
 
     return ListTile(
-      leading: Container(
-        width: 80,
-        decoration: BoxDecoration(
-          color: (pokeTypeColors[nonNullPoke.types.first.type.name] ??
-                  Colors.grey[100])
-              ?.withOpacity(.3),
-          borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(
-            fit: BoxFit.fitWidth,
-            image: NetworkImage(
-              nonNullPoke.sprites.other.officialArtwork.frontDefault,
+      leading: Hero(
+        tag: 'pokemon_${nonNullPoke.id}',
+        child: Container(
+          width: 80,
+          decoration: BoxDecoration(
+            color: (pokeTypeColors[nonNullPoke.types.first.type.name] ??
+                    Colors.grey[100])
+                ?.withOpacity(.3),
+            borderRadius: BorderRadius.circular(10),
+            image: DecorationImage(
+              fit: BoxFit.fitWidth,
+              image: NetworkImage(
+                nonNullPoke.sprites.other.officialArtwork.frontDefault,
+              ),
             ),
           ),
         ),
