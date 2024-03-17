@@ -92,16 +92,21 @@ class PokemonDetailScreen extends StatelessWidget {
                     width: 260,
                   ),
                   const SizedBox(height: 24),
-                  const TabBar(
-                    labelStyle: TextStyle(
-                      fontSize: 16,
+                  TabBar(
+                    labelStyle: const TextStyle(
+                      fontSize: 18,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    unselectedLabelStyle: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey[100]?.withOpacity(0.6),
                       fontWeight: FontWeight.bold,
                     ),
                     dividerColor: Colors.transparent,
                     indicatorColor: Colors.white,
                     indicatorWeight: 5,
-                    tabs: [
+                    tabs: const [
                       Tab(
                         text: 'Details',
                       ),
