@@ -1,0 +1,11 @@
+{
+  "appTitle": "ポケモン",
+  "height" : "たかさ",
+  "weight" : "おもさ",
+  "hp" : "HP",
+  "attack" : "こうげき",
+  "defence" : "しゅび",
+  "speed" : "すばやさ",
+  "special-attack" : "とくこう",
+  "special-defence" : "とくぼう"
+}

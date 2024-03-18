@@ -1,0 +1,11 @@
+{
+  "appTitle": "Pokemon",
+  "height" : "Height",
+  "weight" : "Weight",
+  "hp" : "HP",
+  "attack" : "Attack",
+  "defence" : "Defence", 
+  "speed" : "Speed",
+  "special_attack" : "Special Attack",
+  "special_defence" : "Special Defence"
+}
