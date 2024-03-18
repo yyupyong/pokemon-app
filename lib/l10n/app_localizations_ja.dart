@@ -5,7 +5,7 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get appTitle => 'ポケモン';
+  String get appTitle => 'ポケモン図鑑';
 
   @override
   String get height => 'たかさ';
