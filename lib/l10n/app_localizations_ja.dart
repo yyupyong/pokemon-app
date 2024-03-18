@@ -26,8 +26,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get speed => 'すばやさ';
 
   @override
-  String get special_attack => 'Special Attack';
+  String get special_attack => 'とくこう';
 
   @override
-  String get special_defence => 'Special Defence';
+  String get special_defence => 'とくぼう';
 }

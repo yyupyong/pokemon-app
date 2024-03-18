@@ -1,13 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:pokemon_app/const/pokeapi_color.dart';
 import 'package:pokemon_app/feature/detail/widget/detail_container.dart';
 import 'package:pokemon_app/feature/detail/widget/status_container.dart';
-import 'package:pokemon_app/feature/home/model/pokemon_detail.dart';
 import 'package:pokemon_app/feature/detail/widget/type_tag.dart';
+import 'package:pokemon_app/feature/home/model/pokemon_detail.dart';
 import 'package:pokemon_app/gen/assets.gen.dart';
+import 'package:pokemon_app/l10n/app_localizations.dart';
 
 class PokemonDetailScreen extends StatelessWidget {
   const PokemonDetailScreen({super.key, required this.poke});
@@ -101,11 +99,11 @@ class PokemonDetailScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       DetailContainer(
-                        label: 'Height',
+                        label: AppLocalizations.of(context).height,
                         value: poke.height.toString(),
                       ),
                       DetailContainer(
-                        label: 'Weight',
+                        label: AppLocalizations.of(context).weight,
                         value: poke.weight.toString(),
                       ),
                     ],
@@ -118,12 +116,12 @@ class PokemonDetailScreen extends StatelessWidget {
                         Row(
                           children: [
                             StatsContainer(
-                              label: 'HP',
+                              label: AppLocalizations.of(context).hp,
                               statusValue: poke.stats[0].baseStat.toString(),
                             ),
                             const SizedBox(width: 16),
                             StatsContainer(
-                              label: 'Attack',
+                              label: AppLocalizations.of(context).attack,
                               statusValue: poke.stats[1].baseStat.toString(),
                             ),
                           ],
@@ -132,12 +130,12 @@ class PokemonDetailScreen extends StatelessWidget {
                         Row(
                           children: [
                             StatsContainer(
-                              label: 'defense',
+                              label: AppLocalizations.of(context).defence,
                               statusValue: poke.stats[2].baseStat.toString(),
                             ),
                             const SizedBox(width: 16),
                             StatsContainer(
-                              label: 'speed',
+                              label: AppLocalizations.of(context).speed,
                               statusValue: poke.stats[5].baseStat.toString(),
                             ),
                           ],
@@ -146,12 +144,14 @@ class PokemonDetailScreen extends StatelessWidget {
                         Row(
                           children: [
                             StatsContainer(
-                              label: 'special-attack',
+                              label:
+                                  AppLocalizations.of(context).special_attack,
                               statusValue: poke.stats[3].baseStat.toString(),
                             ),
                             const SizedBox(width: 16),
                             StatsContainer(
-                              label: 'special-defense',
+                              label:
+                                  AppLocalizations.of(context).special_defence,
                               statusValue: poke.stats[4].baseStat.toString(),
                             ),
                           ],

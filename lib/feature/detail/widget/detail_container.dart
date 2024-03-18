@@ -11,16 +11,17 @@ class DetailContainer extends StatelessWidget {
     var displayValue = value;
     var unit = '';
 
-    if (label.toLowerCase() == 'weight') {
+    final lowercaseLabel = label.toLowerCase();
+
+    if (lowercaseLabel == 'weight' || lowercaseLabel == 'おもさ') {
       final weight = double.parse(value);
       unit = 'kg';
       displayValue = (weight / 10).toStringAsFixed(1);
-    } else if (label.toLowerCase() == 'height') {
+    } else if (lowercaseLabel == 'height' || lowercaseLabel == 'たかさ') {
       final height = double.parse(value);
       unit = 'cm';
       displayValue = (height * 10).toStringAsFixed(0);
     }
-
     return Column(
       children: [
         Text(
