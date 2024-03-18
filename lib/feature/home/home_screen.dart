@@ -31,7 +31,7 @@ class HomeScreen extends ConsumerWidget {
                   SliverPadding(
                     padding: EdgeInsets.only(
                       top: MediaQuery.of(context).padding.top + 24,
-                      left: 16,
+                      left: 24,
                     ),
                     sliver: SliverToBoxAdapter(
                       child: Text(
