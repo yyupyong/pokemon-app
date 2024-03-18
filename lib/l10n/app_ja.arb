@@ -6,6 +6,6 @@
   "attack" : "こうげき",
   "defence" : "しゅび",
   "speed" : "すばやさ",
-  "special-attack" : "とくこう",
-  "special-defence" : "とくぼう"
+  "special_attack" : "とくこう",
+  "special_defence" : "とくぼう"
 }
