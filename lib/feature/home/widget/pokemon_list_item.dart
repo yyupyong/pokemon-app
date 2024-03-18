@@ -39,7 +39,10 @@ class PokemonListItem extends ConsumerWidget {
         nonNullPoke.name,
         style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
       ),
-      subtitle: Text(nonNullPoke.types.first.type.name),
+      subtitle: Text(
+        '#${nonNullPoke.id}',
+        style: const TextStyle(color: Colors.blueGrey),
+      ),
       trailing: const Icon(Icons.navigate_next),
       onTap: () {
         Navigator.of(context).push(
