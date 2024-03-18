@@ -26,7 +26,7 @@ https://fvm.app/docs/getting_started/installation
 現状では `3.19.3` を指定しています。VS Code でこのプロジェクトを開き、ウィンドウ右下のターミナルから以下のコマンドで Flutter SDK のバージョンを `3.19.3` に設定してください。
 
 ```
-$ fvm install 3.19
+$ fvm install 3.19.3
 $ fvm use 3.19.3
 $ fvm flutter pub get
 ```
