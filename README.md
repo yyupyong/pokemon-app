@@ -39,8 +39,8 @@ Flutter の開発用の IDE は Visual Studio Code（以下 VS Code）と Androi
 
 ### 命名規則・コーディングルール
 
-linter として pedantic_mono を入れてるのでそこに沿えばという感じ
+linter として pedantic_mono を入れてるのでそこに沿えばという形で考えています
 
 ### Git Flow
 
-main ブランチを master として、main から feature を切るようにして進めてください
+このリポジトリに関しては main ブランチを master として、main から feature を切るようにして進めてください
