@@ -37,8 +37,8 @@ class HomeScreen extends ConsumerWidget {
                       child: Text(
                         AppLocalizations.of(context).appTitle,
                         style: const TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w800,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
