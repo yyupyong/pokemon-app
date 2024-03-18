@@ -31,7 +31,7 @@ class PokemonDetailScreen extends StatelessWidget {
             Positioned(
               right: -24,
               child: Assets.monsterBallWhite
-                  .image(width: 180, height: 180, fit: BoxFit.cover),
+                  .image(width: 160, height: 160, fit: BoxFit.cover),
             ),
             Positioned(
               top: MediaQuery.of(context).padding.top,
